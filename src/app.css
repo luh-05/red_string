@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .neumorphic-bg {
+    background-color: #e0e5ec;
+  }
+  .neumorphic-raised {
+    background: #e0e5ec;
+    box-shadow: 9px 9px 16px #becad7, -9px -9px 16px #ffffff;
+  }
+  .neumorphic-inset {
+    background: #e0e5ec;
+    box-shadow: inset 6px 6px 12px #becad7, inset -6px -6px 12px #ffffff;
+  }
+  .neumorphic-node-well {
+    background: #e0e5ec;
+    box-shadow: inset 3px 3px 6px #becad7, inset -3px -3px 6px #ffffff;
+  }
+  .neumorphic-node-raised {
+    background: #e0e5ec;
+    box-shadow: 4px 4px 8px #becad7, -4px -4px 8px #ffffff;
+  }
+  .neumorphic-button-red {
+    background: #dc2626;
+    box-shadow: 6px 6px 12px #b9bcbf, -6px -6px 12px #ffffff;
+  }
+  .recessed-groove {
+    border-right: 2px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 2px 0 2px rgba(190, 202, 215, 0.5);
+  }
+  .nav-item-neumorphic {
+    background: #e0e5ec;
+    box-shadow: 4px 4px 8px #becad7, -4px -4px 8px #ffffff;
+    transition: all 0.2s ease;
+  }
+  .nav-item-neumorphic.active,
+  .nav-item-neumorphic:active {
+    box-shadow: inset 2px 2px 5px #becad7, inset -2px -2px 5px #ffffff;
+  }
+  .glassmorphic-card {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  }
+  .glassmorphic-input {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .neon-red-glow {
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8)) drop-shadow(0 0 12px rgba(255, 0, 0, 0.4));
+  }
+} 

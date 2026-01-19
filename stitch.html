@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Red String Hybrid Glass-Neumorphic V1</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#f20d0d", "deep-red": "#b91c1c", "neumorphic-bg": "#e0e5ec", "neon-red": "#ff0000", "background-light": "#f8f5f5", "background-dark": "#221010"}, fontFamily: {display: "Inter"}, borderRadius: {DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px"}}}};</script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .neumorphic-bg {
+                background-color: #e0e5ec;
+            }
+            .neumorphic-raised {
+                background: #e0e5ec;
+                box-shadow: 9px 9px 16px #becad7, -9px -9px 16px #ffffff;
+            }
+            .neumorphic-inset {
+                background: #e0e5ec;
+                box-shadow: inset 6px 6px 12px #becad7, inset -6px -6px 12px #ffffff;
+            }
+            .neumorphic-node-well {
+                background: #e0e5ec;
+                box-shadow: inset 3px 3px 6px #becad7, inset -3px -3px 6px #ffffff;
+            }
+            .neumorphic-node-raised {
+                background: #e0e5ec;
+                box-shadow: 4px 4px 8px #becad7, -4px -4px 8px #ffffff;
+            }
+            .neumorphic-button-red {
+                background: #dc2626;
+                box-shadow: 6px 6px 12px #b9bcbf, -6px -6px 12px #ffffff;
+            }
+            .recessed-groove {
+                border-right: 2px solid rgba(255, 255, 255, 0.4);
+                box-shadow: 2px 0 2px rgba(190, 202, 215, 0.5);
+            }
+            .nav-item-neumorphic {
+                background: #e0e5ec;
+                box-shadow: 4px 4px 8px #becad7, -4px -4px 8px #ffffff;
+                transition: all 0.2s ease;
+            }
+            .nav-item-neumorphic:active {
+                box-shadow: inset 2px 2px 5px #becad7, inset -2px -2px 5px #ffffff;
+            }
+            .glassmorphic-card {
+                background: rgba(255, 255, 255, 0.4);
+                backdrop-filter: blur(16px) saturate(120%);
+                -webkit-backdrop-filter: blur(16px) saturate(120%);
+                border: 1px solid rgba(255, 255, 255, 0.6);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+            }
+            .glassmorphic-input {
+                background: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(8px);
+                border: 1px solid rgba(255, 255, 255, 0.5);
+            }
+            .neon-red-glow {
+                filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.8)) drop-shadow(0 0 12px rgba(255, 0, 0, 0.4));
+            }
+        }
+    </style>
+</head>
+<body class="neumorphic-bg text-gray-700 min-h-screen overflow-hidden flex flex-col font-display">
+<header class="flex items-center justify-between px-8 py-5 z-50">
+<div class="flex items-center gap-12">
+<div class="flex items-center gap-3 text-primary">
+<div class="size-9 p-1.5 neumorphic-raised rounded-lg">
+<svg class="w-full h-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold tracking-tight">red_string</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-6">
+<a class="nav-item-neumorphic px-5 py-2 rounded-xl text-primary text-sm font-bold" href="#">Path Graph</a>
+<a class="text-gray-500 text-sm font-medium px-5 py-2 hover:text-gray-800 transition-colors" href="#">Curriculum</a>
+<a class="text-gray-500 text-sm font-medium px-5 py-2 hover:text-gray-800 transition-colors" href="#">Resources</a>
+<a class="text-gray-500 text-sm font-medium px-5 py-2 hover:text-gray-800 transition-colors" href="#">Community</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<div class="flex items-center glassmorphic-input rounded-full px-5 py-2 w-72">
+<span class="material-symbols-outlined text-gray-500 text-[20px]">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full placeholder:text-gray-500 ml-2" placeholder="Search modules..." type="text"/>
+</div>
+<button class="material-symbols-outlined text-gray-500 size-10 glassmorphic-input rounded-full flex items-center justify-center hover:text-gray-800 border-none">settings</button>
+<div class="size-10 rounded-full neumorphic-raised p-0.5">
+<div class="w-full h-full rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCod6yYk4oN0LhALHXwnN6kGLJxM06glNTtxUZaVxRlzA3OmyN1StSV82hZW4eKFVKrhYIa-HBLUmS8AgaDq99RbIccW6UDNkRGmujttAVP17SXrKWIbqjTfPm6aVUEVaqxhpipeUvU9VLPXnGDBeNNpeA1o2NEHLGgFcqzG_UmpktiSOT7rcXifgn8Zkb6pn6UV_jtFst3D2_D1bUuJfldXAiveh20KcoSM8bcB1aPI-67AdWB9RWRWTFhYfNAp8bLNM8p_IxYnIA");'></div>
+</div>
+</div>
+</header>
+<main class="relative flex-1 overflow-hidden">
+<div class="absolute inset-0 flex">
+<div class="flex-1 recessed-groove relative">
+<span class="absolute top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400">Java Programming</span>
+<div class="absolute top-[20%] left-[30%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[60%] left-[20%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[80%] left-[40%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[45%] left-[70%] size-5 neumorphic-node-raised rounded-full flex items-center justify-center">
+<div class="size-2 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex-1 recessed-groove relative">
+<span class="absolute top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400">Forge Development</span>
+<div class="absolute top-[30%] left-[40%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[75%] left-[60%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[40%] left-[30%] size-5 neumorphic-node-raised rounded-full flex items-center justify-center">
+<div class="size-2 bg-primary rounded-full"></div>
+</div>
+<div class="absolute top-[55%] left-[80%] size-5 neumorphic-node-raised rounded-full flex items-center justify-center">
+<div class="size-2 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex-1 recessed-groove relative">
+<span class="absolute top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400">Game Design</span>
+<div class="absolute top-[15%] left-[50%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[85%] left-[30%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[50%] left-[50%] size-5 neumorphic-node-raised rounded-full flex items-center justify-center">
+<div class="size-2 bg-primary rounded-full"></div>
+</div>
+</div>
+<div class="flex-1 relative">
+<span class="absolute top-8 left-1/2 -translate-x-1/2 text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400">Voice Recognition</span>
+<div class="absolute top-[40%] left-[40%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[70%] left-[70%] size-3 neumorphic-node-well rounded-full"></div>
+<div class="absolute top-[45%] left-[60%] size-5 neumorphic-node-raised rounded-full flex items-center justify-center">
+<div class="size-2 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10 neon-red-glow" preserveaspectratio="none" viewbox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+<path d="M 175,450 C 250,450 250,400 325,400 S 400,550 450,550 S 550,500 625,500 S 750,450 900,450" fill="none" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"></path>
+</svg>
+<div class="absolute top-10 left-10 w-[420px] glassmorphic-card rounded-2xl overflow-hidden z-40">
+<div class="p-6 border-b border-white/40">
+<div class="flex items-center justify-between mb-5">
+<span class="text-[10px] font-bold text-white uppercase tracking-widest px-3 py-1 bg-primary/80 rounded-full">Active Node</span>
+<span class="material-symbols-outlined text-sm text-gray-500">open_in_new</span>
+</div>
+<h3 class="text-2xl font-bold mb-1 text-gray-900">Minecraft Modding API</h3>
+<p class="text-sm text-gray-600">Forge Development • Advanced Level</p>
+</div>
+<div class="p-6">
+<div class="bg-white/30 border border-white/50 backdrop-blur-md rounded-xl p-5 font-mono text-[11px] text-gray-700 mb-6">
+<div class="flex gap-2 mb-3">
+<div class="size-2 rounded-full bg-red-400"></div>
+<div class="size-2 rounded-full bg-yellow-400"></div>
+<div class="size-2 rounded-full bg-green-400"></div>
+</div>
+<p><span class="text-purple-700">@Mod</span>(<span class="text-orange-700">"examplemod"</span>)</p>
+<p><span class="text-blue-700">public class</span> ExampleMod {</p>
+<p class="pl-4"> <span class="text-blue-700">public</span> ExampleMod() {</p>
+<p class="pl-8 text-gray-500">// Register event handlers</p>
+<p class="pl-8">FMLJavaModLoadingContext.get()</p>
+<p class="pl-12">.getModEventBus().addListener(<span class="text-blue-700">this</span>::setup);</p>
+<p class="pl-4">}</p>
+<p>}</p>
+</div>
+<div class="flex gap-4">
+<button class="flex-1 neumorphic-button-red text-white text-xs font-bold py-4 rounded-xl hover:brightness-110 active:scale-[0.98] transition-all uppercase tracking-wider">
+                    Continue Module
+                </button>
+<button class="size-12 glassmorphic-card border-none text-gray-500 rounded-xl hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-10 p-6 glassmorphic-card rounded-2xl w-80 z-40">
+<div class="flex items-center justify-between mb-5">
+<h3 class="font-bold text-sm tracking-tight text-gray-900">Path Progress</h3>
+<span class="text-primary font-bold text-sm">65%</span>
+</div>
+<div class="w-full bg-white/30 h-3 rounded-full mb-6 p-0.5 border border-white/30">
+<div class="bg-primary h-full w-[65%] rounded-full shadow-[0_0_10px_rgba(220,38,38,0.4)]"></div>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex -space-x-3">
+<div class="size-9 rounded-full border-2 border-white/60 bg-cover glassmorphic-card" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvteEI9yYkgBj0QzBs91MQkUGIThSrd4QfnYW4QgKI0ZYb4eFflF8c9HCYWVe5oEpUIZNBgXotTS1xOe0l1uGWFznHFwHfSScr3HuzSDJvbdWhWIyDESa00R0DMU5atJSOL03JAq-UGSyNbGfkOnssL9gAqBoR8-z0qOsiMHWSTZ8lsZvOlqU-QW6hWWnrUEoZ2eeYldFgRZsyEJLjlgnRv4b3gRa47khUimSOERFfKLRbPVztpP0HND6T4w8NYHXFWdr1snhAx20");'></div>
+<div class="size-9 rounded-full border-2 border-white/60 bg-cover glassmorphic-card" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDTKm0x9HtwrYuoewXjDNBkW4VW9qPMlt8MQc-ZQpNKDKqB1tZ6BKgxlWAGvLpNI3y6DDpTrzPYDHQMVoE68--_HsOF879CutHCgYUeY0yOBbhrnTKULjCF2bEjETbXI695Tm4ao5GXRUmlsXHfit_fRUP7KsJBL4TY9kwXNiatpRBGX5iO3YfjRHDrqDHdvXgMgg4j3XorWTCi09FTTs-TR1ZTRQu7PwlBIsSCT4GWG-u6CBsi-kU7fYUqSMfB_rt5F_YJ8FIz-hY");'></div>
+<div class="size-9 rounded-full border-2 border-white/60 bg-primary flex items-center justify-center text-[10px] font-bold text-white shadow-lg">+82</div>
+</div>
+<p class="text-[11px] text-gray-600 font-medium leading-tight">Students active on this path segment</p>
+</div>
+</div>
+<div class="absolute bottom-10 right-10 flex flex-col gap-4 z-40">
+<div class="flex flex-col glassmorphic-card rounded-xl overflow-hidden">
+<button class="p-4 hover:bg-white/30 text-gray-700 transition-colors">
+<span class="material-symbols-outlined text-[22px]">add</span>
+</button>
+<div class="h-[1px] bg-white/40 mx-3"></div>
+<button class="p-4 hover:bg-white/30 text-gray-700 transition-colors">
+<span class="material-symbols-outlined text-[22px]">remove</span>
+</button>
+</div>
+<button class="size-12 glassmorphic-card text-gray-700 hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">layers</span>
+</button>
+<button class="flex items-center gap-3 px-7 py-4 neumorphic-button-red text-white rounded-xl font-bold text-xs uppercase tracking-widest hover:brightness-110 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">map</span>
+            Full Map
+        </button>
+</div>
+</main>
+<div class="fixed bottom-4 left-1/2 -translate-x-1/2 text-[9px] text-gray-500 font-bold uppercase tracking-[0.5em] pointer-events-none">
+    Red String Visualization • System Status: Synchronized
+</div>
+</body></html>

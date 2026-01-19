@@ -25,8 +25,6 @@
               echo "node_modules not found. Running pnpm install..."
               pnpm install
             fi
-
-            echo "Run 'pnpm dev' to start the live development server."
           '';
         };
       });
