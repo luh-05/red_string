@@ -14,7 +14,15 @@ const config = {
     adapter: adapter({
       fallback: '200.html',
     }),
-  }
+  },
+
+  onwarn: (warning, handler) => {
+      const { code, frame } = warning;
+      if (code === "css-unused-selector")
+          return;
+
+      handler(warning);
+  },
 };
 
 export default config;
