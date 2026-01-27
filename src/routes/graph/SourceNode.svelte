@@ -26,10 +26,10 @@
     <div
       style:width="10px"
       style:height="10px"
-      class="rounded-xl outline-1 z-0">
+      class="rounded-xl  z-0">
       
     </div>
-    <div class="rounded-2xl absolute overflow-hidden "
+    <!--div class="rounded-2xl absolute overflow-hidden "
       style:width="30px"
       style:height="30px"
       style:rotate="{90+rot}deg"
@@ -42,10 +42,9 @@
         <div class=""
           style:width="0px"
           style:height="0px">
-            <!--Handle type=source position={Position.Left}/-->
         </div>
       </div>
-    </div>
+    </div-->
     <div
       style:width="10px"
       style:height="10px"
@@ -61,7 +60,7 @@
     class="-z-1 absolute border-23 border-neumorphic-bg rounded-4xl">
   </div>
 
-  <svg viewBox="-100 -100 200 200" width="20" height="20">
+  <!--svg viewBox="-100 -100 200 200" width="20" height="20">
     <defs>
       <filter id="neumorphic_inset_red" filterUnits="userSpaceOnUse" x="-100%" y="-100%" width="300%" height="300%">
         <feOffset dx="6" dy="6" in="SourceAlpha" result="offset" />
@@ -98,7 +97,7 @@
         />
       </g>
     {/each}
-  </svg>
+  </svg-->
 </div>
 
 <!--Handle type="source" position={Position.Left} />

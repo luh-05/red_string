@@ -24,13 +24,49 @@ export const initialNodes: Node[] = [
     position: { x: 350, y: 200 },
   },*/
   {
+    id: '1-1',
+    type: 'source',
+    draggable: false,
+    data: {
+
+    },
+    position: { x: 150, y: 300}
+  },
+  {
+    id: '1-2',
+    type: 'source',
+    draggable: false,
+    data: {
+
+    },
+    position: { x: 250, y: 350}
+  },
+  {
     id: '1-3',
     type: 'source',
     draggable: false,
     data: {
 
     },
+    position: { x: 300, y: 200}
+  },
+  {
+    id: '1-4',
+    type: 'source',
+    draggable: false,
+    data: {
+
+    },
     position: { x: 400, y: 250}
+  },
+  {
+    id: '1-5',
+    type: 'source',
+    draggable: false,
+    data: {
+
+    },
+    position: { x: 500, y: 250}
   },
 ];
 
